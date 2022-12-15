@@ -1,0 +1,101 @@
+#services {
+  padding: 2rem 3rem;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  text-transform: capitalize;
+}
+#services .servicesTitle {
+  color: #3a50f9;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+#services .paragraphTitle {
+  margin-top: 1rem;
+  color: #888;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+#services .Boxes {
+  margin: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+#services .Boxes .Box {
+  position: relative;
+  border-top: 12px solid #3a50f9;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  height: 330px;
+  width: 28%;
+}
+#services .Boxes .Box:hover {
+  border-top-color: #d13394;
+  color: #fff !important;
+}
+#services .Boxes .Box:hover::after {
+  width: 100%;
+}
+#services .Boxes .Box:hover .firstServiceSpan {
+  background-color: #d13394;
+}
+#services .Boxes .Box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  width: 0;
+  transition: all 0.3s linear !important;
+  z-index: 6;
+}
+#services .Boxes .Box span {
+  z-index: 7;
+  transition: all 0.2s linear !important;
+  display: block;
+  margin: 0 auto;
+}
+#services .Boxes .Box .firstServiceSpan {
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #3a50f9;
+}
+#services .Boxes .Box .firstServiceSpan svg {
+  color: #fff;
+  font-size: 2rem;
+}
+#services .Boxes .Box .secondServiceSpan {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+#services .Boxes .Box .thirdServiceSpan {
+  font-size: 1.2rem;
+  font-font-weight: 300;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 992px) {
+  #services {
+    padding-top: 6rem;
+  }
+  #services .Boxes {
+    margin: 0;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  #services .Boxes .Box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Service.css.map */

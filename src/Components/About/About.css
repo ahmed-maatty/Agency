@@ -1,0 +1,178 @@
+#about {
+  text-transform: capitalize;
+  text-align: center;
+}
+#about .AboutSecondfst {
+  height: 100vh;
+  margin-bottom: 4rem;
+  background-color: #F3F5F4;
+}
+#about .AboutSecondfst .whatWeDoImg {
+  background: url(../../Img/whatmin.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#about .AboutSecondfst .whatWeDo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+}
+#about .AboutSecondfst .whatWeDo h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+#about .AboutSecondfst .whatWeDo h1 {
+  width: 18rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#about .AboutSecondfst .whatWeDo p {
+  width: 32rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#about .AboutSecondfst .whatWeDo button {
+  background-color: #3a50f9;
+  color: #fff;
+}
+#about .AboutSecondfst .whatWeDo button:hover {
+  background-color: #d13394;
+}
+#about .AboutSecondSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 2rem 4rem;
+}
+#about .AboutSecondSec div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#about .AboutSecondSec .aboutTitle h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#about .AboutSecondSec .aboutContent {
+  width: 50rem;
+}
+#about .AboutSecondSec .aboutContent p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+#about .AboutSecondSec .Boxes {
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+#about .AboutSecondSec .Boxes .Box {
+  border-top: 12px solid #3a50f9;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  width: 250px;
+  height: 300px;
+}
+#about .testimonial {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3a50f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#about .testimonial .opinion {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+#about .testimonial .opinion img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#about .testimonial .opinion p {
+  width: 20rem;
+}
+#about .testimonial .opinion h5 {
+  letter-spacing: 1px;
+}
+#about .testimonial span {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  padding: 8px;
+  position: absolute;
+  top: 22rem;
+  cursor: pointer;
+}
+#about .testimonial span:hover {
+  transform: scale(1.1);
+}
+#about .testimonial .nextArrow {
+  right: 31rem;
+}
+#about .testimonial .prevArrow {
+  left: 31rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #about .AboutSecondfst .whatWeDoImg {
+    display: none;
+  }
+  #about .AboutSecondfst .whatWeDo {
+    text-align: center;
+  }
+  #about .AboutSecondfst .whatWeDo h1 {
+    width: auto;
+    font-size: 2.7rem;
+  }
+  #about .AboutSecondfst .whatWeDo p {
+    width: auto;
+  }
+  #about .AboutSecondfst .whatWeDo button {
+    margin: 0 auto;
+  }
+  #about .AboutSecondSec {
+    padding: 2rem 1rem;
+  }
+  #about .AboutSecondSec .aboutContent {
+    width: auto;
+  }
+  #about .AboutSecondSec .aboutContent p {
+    width: auto;
+  }
+  #about .AboutSecondSec .Boxes {
+    justify-content: center;
+  }
+  #about .testimonial .opinion {
+    padding: 0.8rem 1.3rem;
+  }
+  #about .testimonial span {
+    top: 40rem;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  #about .testimonial .nextArrow {
+    right: 7rem;
+  }
+  #about .testimonial .prevArrow {
+    left: 7rem;
+  }
+}/*# sourceMappingURL=About.css.map */

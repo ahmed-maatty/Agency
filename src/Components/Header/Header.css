@@ -1,0 +1,62 @@
+#Home {
+  background: url(../../Img/cvb.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Home .HomeContent {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#Home .HomeContent div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#Home .HomeContent .Logo img {
+  width: 20rem;
+}
+#Home .HomeContent .HomeTitle h1 {
+  width: 40rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+}
+#Home .HomeContent .HomeParagraph p {
+  width: 50rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+}
+#Home .HomeContent .HomeButton button {
+  color: #474d75;
+}
+#Home .HomeContent .HomeButton button:hover {
+  background-color: #d13394;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  #Home .HomeContent .Logo img {
+    width: 16rem;
+  }
+  #Home .HomeContent .HomeTitle h1 {
+    width: 30rem;
+    font-size: 2.5rem;
+  }
+  #Home .HomeContent .HomeParagraph p {
+    width: 23rem;
+  }
+}/*# sourceMappingURL=Header.css.map */

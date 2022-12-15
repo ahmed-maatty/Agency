@@ -1,0 +1,52 @@
+#NavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 2.5rem;
+    width: 3rem;
+    z-index: 999;
+    position: fixed;
+    background-color: rgba($color: #000, $alpha: 0.5);
+    right: 2rem;
+    top: 10rem;
+    border-radius: 2rem;
+    text-align: center !important;
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: #d13394;
+            svg {
+                color: #d13394;
+            }
+            }
+        svg {
+            color: #fff;
+            font-size: 1.7rem;            
+        }
+    }
+    a.active {
+        color: #d13394;
+            svg {
+                color: #d13394;
+            }
+        
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #NavBar {
+        flex-direction: row;
+        width: auto;
+        top: 1rem;
+        right: 1.7rem;
+        padding: 1rem 1.6rem;
+        a {
+            svg{
+                font-size: 1.4rem ;
+            }
+        }
+    }
+}

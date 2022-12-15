@@ -1,0 +1,81 @@
+#Team {
+    padding: 2rem 3rem;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    text-transform: capitalize;
+    .TeamTitle{
+        color: #3a50f9;
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+    .paragraphTitleTeam {
+        margin-top: 1rem;
+        color: #888;
+        font: {
+            size: 1.3rem;
+            weight: 300;
+        }
+    }
+    .Box {
+        display: flex;
+        justify-content: space-around;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        .TeamBoxes {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 29%;
+            padding: 1rem 2rem;
+            margin:3rem 0;
+            span {
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+            .TeamImg {
+                width: 140px;
+                height: 140px;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+            .TeamName {
+                font: {
+                    size:1.5rem;
+                    weight:300;
+                }
+            }
+            .Teampos {
+                color: #3a50f9;
+                font: {
+                    size:1.1;
+                    weight:600;
+                }
+            }
+            .TeamDetails {
+                font-size: 0.9rem;
+                font-weight: 300;
+                width: 19rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    #Team {
+        padding-top: 6rem;
+        .Box{
+            flex-direction: column;
+            .TeamBoxes {
+                width: 100%;
+                .TeamDetails {
+                    width: 13rem;
+                }
+            }
+        }
+    }
+}

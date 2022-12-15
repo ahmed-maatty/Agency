@@ -1,0 +1,49 @@
+#NavBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 2.5rem;
+  width: 3rem;
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 2rem;
+  top: 10rem;
+  border-radius: 2rem;
+  text-align: center !important;
+}
+#NavBar a {
+  text-decoration: none;
+  color: #fff;
+}
+#NavBar a:hover {
+  color: #d13394;
+}
+#NavBar a:hover svg {
+  color: #d13394;
+}
+#NavBar a svg {
+  color: #fff;
+  font-size: 1.7rem;
+}
+#NavBar a.active {
+  color: #d13394;
+}
+#NavBar a.active svg {
+  color: #d13394;
+}
+
+@media only screen and (max-width: 992px) {
+  #NavBar {
+    flex-direction: row;
+    width: auto;
+    top: 1rem;
+    right: 1.7rem;
+    padding: 1rem 1.6rem;
+  }
+  #NavBar a svg {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=Nav.css.map */

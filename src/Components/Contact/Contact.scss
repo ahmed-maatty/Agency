@@ -1,0 +1,45 @@
+#Contact{
+    padding: 4rem 1rem;
+    .ContactTitle{
+        text-align: center;
+        font-size: 3rem;
+        color: #3a50f9;
+    }
+    .Contact {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        input,textarea {
+            padding: 10px 13px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #3a50f9;
+            width: 40%;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #3a50f9;
+            color: #fff;
+            &:hover {
+                background-color: #d13394;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    #Contact{
+        padding: 8rem 1rem;
+        .Contact{
+            input,textarea{
+                width: 100%;
+            }
+            button {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
